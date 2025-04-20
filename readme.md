@@ -1,5 +1,7 @@
 # contenairazed web app with CDE, CICD on cloud
 
+> pending CD on cloud. seems that i have to self host.
+
 ## The net
 ![net](screens/net.jpg)
 
