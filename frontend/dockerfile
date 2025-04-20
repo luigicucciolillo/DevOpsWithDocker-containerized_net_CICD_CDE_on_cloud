@@ -1,0 +1,11 @@
+FROM node:18
+RUN useradd -m appuser
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+#RUN chmod +x /app/entrypoint.sh
+COPY . .
+USER appuser
+CMD ["npm", "start"]
+#CMD ["/app/entrypoint.sh"]
+EXPOSE 3000
